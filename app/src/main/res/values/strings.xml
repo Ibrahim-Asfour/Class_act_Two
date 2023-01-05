@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">quizTwo</string>
+    <string name="name">name</string>
+    <string name="salary">salary</string>
+    <string name="add">add</string>
 </resources>
