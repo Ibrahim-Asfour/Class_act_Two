@@ -13,13 +13,12 @@
         android:layout_marginTop="40dp"
         android:layout_marginBottom="34dp"
         android:ems="10"
-        android:hint="@string/name"
+        android:hint="name"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/salary"
         app:layout_constraintEnd_toEndOf="@+id/salary"
         app:layout_constraintStart_toStartOf="@+id/salary"
-        app:layout_constraintTop_toTopOf="parent"
-        android:autofillHints="" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/salary"
@@ -28,28 +27,29 @@
         android:layout_marginStart="44dp"
         android:layout_marginBottom="17dp"
         android:ems="10"
-        android:hint="@string/salary"
+        android:hint="salary"
         android:inputType="numberDecimal"
         app:layout_constraintBottom_toTopOf="@+id/spinner"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/name" />
 
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="21dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintStart_toStartOf="@+id/salary"
         app:layout_constraintTop_toBottomOf="@+id/salary" />
 
     <Button
         android:onClick="addInfo"
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="47dp"
         android:layout_marginBottom="41dp"
-        android:text="@string/add"
+        android:text="add"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinner" />
 
@@ -62,6 +62,7 @@
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
